@@ -2,24 +2,24 @@
     padding: 20px;
 }
 div {
-    background-color:#1e81b0;
-    text-align: center;
+    background-color:lightblue;
+    text-align: left;
 }
 /*etiqueta nombre*/
 #nombre {
     margin-top: 2%;
-    margin-left: 2%;
+    font-weight: bold;
 }
 /*etiqueta foto de perfil en celular*/
 @media (max-width: 576px){
 #fotodeperfil{ 
     position: absolute;
-    width: 15%;
+    width: 20%;
     border-radius: 100%;
     border: 2px solid #eab676;
     box-shadow: 0px 0px 30px #eab676;
-    left:180px;
-    top:750px;
+    left:70%;
+    top:680px;
     }
 }
 
@@ -27,12 +27,12 @@ div {
 @media (min-width: 575px){
     #fotodeperfil{ 
         position: absolute;
-        width: 20%;
-        border-radius: 100%;
+        width: 15%;
+        border-radius: 80%;
         border: 2px solid #eab676;
         box-shadow: 0px 0px 30px #eab676;
-        left: 25px;
-        top:260px;
+        left: 15px;
+        top:285px;
         }
     }
 
