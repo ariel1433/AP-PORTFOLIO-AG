@@ -2,7 +2,7 @@
     padding: 20px;
 }
 div {
-    background-color:#063970;
+    background-color:#1e81b0;
     text-align: center;
 }
 /*etiqueta foto de perfil*/
@@ -11,7 +11,7 @@ div {
     position: absolute;
     width: 10%;
     border-radius: 100%;
-    border: 12px solid #eab676;
+    box-shadow: 0px 0px 30px #eab676;
     left: 25px;
     top:550px;
     }
