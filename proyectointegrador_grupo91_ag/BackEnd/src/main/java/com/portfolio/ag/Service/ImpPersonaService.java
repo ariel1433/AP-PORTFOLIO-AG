@@ -1,15 +1,15 @@
 package com.portfolio.ag.Service;
 
-import com.portfolio.ag.Entity.Persona;
 import com.portfolio.ag.Interface.IPersonaService;
+import com.portfolio.ag.Entity.Persona;
 import com.portfolio.ag.Repository.IPersonaRepository;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
-public class ImpPersonaService implements IPersonaService{ 
-@Autowired IPersonaRepository ipersonaRepository;
+public class ImpPersonaService implements IPersonaService{
+    @Autowired IPersonaRepository ipersonaRepository;
     
     @Override
     public List<Persona> getPersona() {

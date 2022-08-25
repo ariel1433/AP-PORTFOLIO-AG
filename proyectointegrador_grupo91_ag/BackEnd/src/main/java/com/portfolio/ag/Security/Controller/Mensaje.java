@@ -2,16 +2,16 @@ package com.portfolio.ag.Security.Controller;
 
 public class Mensaje {
     private String mensaje;
-
-// Constructor
-    public Mensaje(){
-    }
     
-    public Mensaje (String mensaje){
+    //Constructor
+
+    public Mensaje() {
+    }
+
+    public Mensaje(String mensaje) {
         this.mensaje = mensaje;
     }
-    
-    //Getter & Setter
+    //Getter y Setter
 
     public String getMensaje() {
         return mensaje;

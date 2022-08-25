@@ -21,4 +21,3 @@ export class AuthService {
     return this.httpClient.post<JwtDto>(this.authURL + 'login', loginUsuario)
   }
  }
- 

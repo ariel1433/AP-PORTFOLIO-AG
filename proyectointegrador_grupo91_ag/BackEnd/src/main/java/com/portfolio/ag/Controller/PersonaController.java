@@ -1,4 +1,3 @@
-
 package com.portfolio.ag.Controller;
 
 import com.portfolio.ag.Entity.Persona;
@@ -21,23 +20,23 @@ import org.springframework.web.bind.annotation.RestController;
 public class PersonaController {
     @Autowired IPersonaService ipersonaService;
     
-    @GetMapping ("personas/traer")
-    public List<Persona> getPersona (){
-    return ipersonaService.getPersona();
+    @GetMapping("personas/traer")
+    public List<Persona> getPersona(){
+        return ipersonaService.getPersona();
     }
     
     @PreAuthorize("hasRole('ADMIN')")
-    @PostMapping ("personas/crear")
-    public String createPersona (@RequestBody Persona persona){
-    ipersonaService.savePersona(persona);
-    return "La persona fue creada correctamente";
+    @PostMapping("/personas/crear")
+    public String createPersona(@RequestBody Persona persona){
+        ipersonaService.savePersona(persona);
+        return "La persona fue creada correctamente";
     }
- 
+    
     @PreAuthorize("hasRole('ADMIN')")
     @DeleteMapping("/personas/borrar/{id}")
     public String deletePersona(@PathVariable Long id){
-    ipersonaService.deletePersona(id);
-    return "La persona fue eliminada correctamente";
+        ipersonaService.deletePersona(id);
+        return "La persona fue eliminada correctamente";
     }
     
     @PreAuthorize("hasRole('ADMIN')")
@@ -45,14 +44,20 @@ public class PersonaController {
     public Persona editPersona(@PathVariable Long id,
                                @RequestParam("nombre") String nuevoNombre,
                                @RequestParam("apellido") String nuevoApellido,
-                               @RequestParam("img") String nuevoImg) {
+                               @RequestParam("img") String nuevoImg){
         Persona persona = ipersonaService.findPersona(id);
         
         persona.setNombre(nuevoNombre);
         persona.setApellido(nuevoApellido);
         persona.setImg(nuevoImg);
-            
+        
         ipersonaService.savePersona(persona);
         return persona;
     }
+    
+    @GetMapping("personas/traer/perfil")
+    public Persona findPersona(){
+        return ipersonaService.findPersona((long)1);
+    }
+   
 }

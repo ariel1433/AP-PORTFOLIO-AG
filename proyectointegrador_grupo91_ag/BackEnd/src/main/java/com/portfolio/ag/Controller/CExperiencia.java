@@ -43,10 +43,10 @@ public class CExperiencia {
     @DeleteMapping("/delete/{id}")
     public ResponseEntity<?> delete(@PathVariable("id") int id) {
         if (!sExperiencia.existsById(id)) {
-            return new ResponseEntity(new Mensaje("No existe la experiencia"), HttpStatus.NOT_FOUND);
+            return new ResponseEntity(new Mensaje("no existe"), HttpStatus.NOT_FOUND);
         }
         sExperiencia.delete(id);
-        return new ResponseEntity(new Mensaje("Experiencia eliminada"), HttpStatus.OK);
+        return new ResponseEntity(new Mensaje("eliminado"), HttpStatus.OK);
     }
 
     
