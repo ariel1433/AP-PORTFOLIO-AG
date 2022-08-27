@@ -12,4 +12,5 @@
 <li>:white_check_mark: MODULO 6</li>  
 <li>:white_check_mark: MODULO 7</li>
 <li>:white_check_mark: MODULO 8</li>
+<li>:negative_squared_cross_mark: MODULO 9</li>
 </ol>
