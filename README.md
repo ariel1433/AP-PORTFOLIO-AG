@@ -1,6 +1,5 @@
-# proyectointegrador_Grupo91_ArielGastaminza
-* Argentina Programa | Grupo91
-* Ariel Gastaminza
+# Proyecto Integrador Porfolio
+* Argentina Programa | Grupo91 | Ariel Gastaminza
 
 <ol>
 <li>:white_check_mark: MODULO 1</li>
