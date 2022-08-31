@@ -1,15 +1,14 @@
-# proyectointegrador_Grupo91_ArielGastaminza
-Argentina Programa
-Grupo91
-ArielGastaminza
+# Proyecto Integrador Porfolio
+* Argentina Programa | Grupo91 | Ariel Gastaminza
 
-Modulo 1 OK
-Modulo 2 OK
-Modulo 3 OK
-Modulo 4 OK
-Modulo 5 OK
-Modulo 6 OK
-Modulo 7 OK
-Modulo 8 OK
-Modulo 9 OK
-Trabajo Integrador EN PROCESO
+<ol>
+<li>:white_check_mark: MODULO 1</li>
+<li>:white_check_mark: MODULO 2</li>
+<li>:white_check_mark: MODULO 3</li>
+<li>:white_check_mark: MODULO 4</li>
+<li>:white_check_mark: MODULO 5</li>
+<li>:white_check_mark: MODULO 6</li>  
+<li>:white_check_mark: MODULO 7</li>
+<li>:white_check_mark: MODULO 8</li>
+<li>:negative_squared_cross_mark: MODULO 9</li>
+</ol>
