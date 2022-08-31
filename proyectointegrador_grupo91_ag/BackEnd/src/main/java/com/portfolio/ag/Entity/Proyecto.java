@@ -12,15 +12,19 @@ public class Proyecto {
     private int id;
     private String nombreE;
     private String descripcionE;
+    private String imgE;
+    private String urlE;
     
     //Constructores
 
     public Proyecto() {
     }
 
-    public Proyecto(String nombreE, String descripcionE) {
+    public Proyecto(String nombreE, String descripcionE, String imgE, String urlE) {
         this.nombreE = nombreE;
         this.descripcionE = descripcionE;
+        this.imgE = imgE;
+        this.urlE = urlE;
     }
     
     //Getters and setters
@@ -47,6 +51,22 @@ public class Proyecto {
 
     public void setDescripcionE(String descripcionE) {
         this.descripcionE = descripcionE;
+    }
+
+    public String getImgE() {
+        return imgE;
+    }
+
+    public void setImgE(String imgE) {
+        this.imgE = imgE;
+    }
+
+    public String getUrlE() {
+        return urlE;
+    }
+
+    public void setUrlE(String urlE) {
+        this.urlE = urlE;
     }
     
 }

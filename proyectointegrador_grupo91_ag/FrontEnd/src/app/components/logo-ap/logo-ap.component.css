@@ -2,13 +2,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
 }
 .redes{
-    margin-right: 0.5em;
+    margin-right: 0.8em;
 }
 .redes img{ 
-    margin: 0.3em
+    margin: 0.3em;
 }
 #LogoAP{
     width: 150px;

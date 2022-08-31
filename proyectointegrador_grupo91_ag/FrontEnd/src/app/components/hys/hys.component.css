@@ -1,4 +1,6 @@
 .row {
-    background-color: lightblue;
+    background-color: #0fb9f4;
     padding: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
 }

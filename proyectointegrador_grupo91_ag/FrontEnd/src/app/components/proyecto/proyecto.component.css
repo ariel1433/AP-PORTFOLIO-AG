@@ -1,14 +1,6 @@
 .row{
-    padding: 20px;
-    background-color: lightblue
-}
-.contenedor{
     width: auto;
-}
-.parte1, .parte2{
-display: inline-block;
-text-align: justify;
-}
-.img-proyecto{
-    box-shadow: 0px 0px 30px #eab676;
+    padding: 20px;
+    background-color: #0fb9f4;
+    justify-content: center;
 }

@@ -1,18 +1,23 @@
 <div class="row">
-    <h1>Educación</h1>
-    <div class="col-lg-2">
-        <button type="button" class="btn btn-dark" routerLink="/nuevaedu" *ngIf="isLogged">
-            Nueva Educación
-        </button>
+    <div>
+      <h1>EDUCACION <button type="button" class="btn btn-dark" routerLink="/nuevaedu" 
+      *ngIf="isLogged"> AGREGAR </button> </h1> 
     </div>
-
-    <div class="col lg 1"></div>
-    <div class="col-lg-11">
-        <table class="table">
+  </div>
+  <div>
+    <div class="row justify-content-center">
+        <div class="col-auto">
+          <table class="table table-responsive">
             <tbody>
                 <tr *ngFor="let Educacion of educacion">
                     <td>
-                        <h2>{{Educacion.nombreE}}</h2>
+                        <img src="{{Educacion.imgE}}" width="100px">
+                    </td>
+                    <td>
+                        <h5>{{Educacion.fechaE}}</h5>
+                    </td>
+                    <td>
+                        <h5>{{Educacion.nombreE}}</h5>
                     </td>
                     <td>{{Educacion.descripcionE}}</td>
                     <td *ngIf="isLogged">
@@ -27,5 +32,4 @@
             </tbody>
         </table>
     </div>
-
-</div>
+  </div>
