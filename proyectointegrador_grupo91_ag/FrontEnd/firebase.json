@@ -1,0 +1,16 @@
+{
+  "hosting": {
+    "public": "dist/proyectointegrador_grupo91_ag",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
